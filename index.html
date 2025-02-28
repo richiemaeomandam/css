@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appdev Css</title>
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #9dc7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #9dc7f7;
+            color: white;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: skyblue;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #9dc7f7;
+            color: white;
+        }
+
+        /* Content Container */
+        .page-content {
+            background: white;
+            padding: 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Image Styling */
+        .image-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        .section {
+            background:#9dc7f7;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: gray;
+            text-align: center;
+            padding: 15px;
+            background:#9dc7f7;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Welcome to My Stylish Page</header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="image-container">
+            <img src="star.png" alt="A decorative star image">
+        </div>
+
+        <p>Welcome! This is a beautifully styled webpage with a modern design.</p>
+        <h2 class="largest-heading">Let's Explore!</h2>
+
+        <div class="section" id="about">This is the About section.</div>
+        <div class="section" id="education">This is the Education section.</div>
+        <div class="section" id="skills">This is the Skills section.</div>
+        <div class="section" id="portfolio">This is the Portfolio section.</div>
+        <div class="section" id="contact">This is the Contact section.</div>
+    </div>
+
+    <footer>I am the footer, the last section of this page</footer>
+
+</body>
+</html>
